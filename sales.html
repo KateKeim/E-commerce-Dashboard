@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sales Report</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="shop-name">
+            <h1>Trinity Shop</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="sales.html">Sales Report</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="customers.html">Customers</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Sales Report</h1>
+        <table class="sales-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sales data will be populated here -->
+                <tr>
+                    <td>2023-11-01</td>
+                    <td>Product A</td>
+                    <td>10</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>2023-11-02</td>
+                    <td>Product B</td>
+                    <td>5</td>
+                    <td>$50.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <div class="filters">
+            <label for="date-filter">Date Range:</label>
+            <input type="date" id="date-filter">
+
+            <label for="product-name-filter">Product Name:</label>
+            <input type="text" id="product-name-filter">
+
+            <label for="category-filter">Product Category:</label>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+

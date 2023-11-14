@@ -1,0 +1,244 @@
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.shop-name h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #3b74de; /* Slightly darker Google Blue */
+}
+
+/* Container Styles */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Dashboard Card Styles */
+.dashboard-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+}
+
+.dashboard-card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.dashboard-card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4285f4; /* Google Blue */
+}
+
+/* Grid Styles */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Top Selling Products and Categories List Styles */
+.dashboard-list {
+    list-style-type: none;
+}
+
+.dashboard-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/*________________________________________________________ Sales report __________________________________________________--*/
+/* Sales Table Styles */
+.sales-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.sales-table th, .sales-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.sales-table th {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+}
+
+.sales-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Filter Styles */
+.filters {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.filters input[type="date"] {
+    width: 150px;
+}
+
+.filters input[type="text"],
+.filters select {
+    flex: 1;
+}
+
+/* Make the select element match the input style */
+.filters select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%234285f4"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.7 5.3c-.39-.39-1.02-.39-1.41 0l-4.59 4.59-4.59-4.59c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l4.59 4.59-4.59 4.59c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0l4.59-4.59 4.59 4.59c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41l-4.59-4.59 4.59-4.59c.39-.39.39-1.02 0-1.41z" fill="%234285f4"/></svg>') no-repeat right 8px center;
+    background-size: 24px;
+}
+
+.filters select:focus {
+    border-color: #4285f4; /* Google Blue */
+}
+
+/*________________________________________________________ Inventory __________________________________________________--*/
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.add-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #2980b9;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search label {
+    margin-right: 10px;
+}
+
+.search input {
+    padding: 8px;
+}
+
+/*________________________________________________________ Customers __________________________________________________--*/
+
+/* Customers Table Styles */
+.customers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.customers-table th, .customers-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.customers-table th {
+    background-color: #3498db; /* Orange */
+    color: #fff;
+}
+
+.customers-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Add alternating row background color */
+.customers-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .customers-table {
+        overflow-x: auto;
+    }
+}

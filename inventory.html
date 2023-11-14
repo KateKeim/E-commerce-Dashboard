@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inventory</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="shop-name">
+            <h1>Trinity Shop</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="sales.html">Sales Report</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="customers.html">Customers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Inventory</h1>
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Inventory data will be populated here -->
+                <tr>
+                    <td>Product A</td>
+                    <td>Electronics</td>
+                    <td>100</td>
+                    <td>In Stock</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product B</td>
+                    <td>Clothing</td>
+                    <td>50</td>
+                    <td>Low Stock</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <button class="add-button">Add Product</button>
+    </div>
+</body>
+</html>

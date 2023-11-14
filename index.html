@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-commerce Dashboard</title>
+</head>
+
+<body class="bg-gray-100">
+    <!----------------------------------------Overview Page --------------------------------------->
+    <nav class="sidebar">
+        <div class="shop-name">
+            <h1>Trinity Shop</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="sales.html">Sales Report</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="customers.html">Customers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mx-auto p-5">
+        <!-- Sales and Revenue -->
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Total Sales</h2>
+                <p class="dashboard-card-value">$1,457,343.32</p>
+            </div>
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Total Revenue</h2>
+                <p class="dashboard-card-value">$1,467,343.32</p>
+            </div>
+        </div>
+        <!-- Number of Orders -->
+        <div class="mt-6">
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Number of Orders</h2>
+                <p class="dashboard-card-value">25,567</p>
+            </div>
+        </div>
+        <!-- Top Selling Products -->
+        <div class="mt-6">
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Top Selling Products</h2>
+                <ul class="dashboard-list pl-5">
+                    <!-- List of top-selling products -->
+                </ul>
+            </div>
+        </div>
+        <!-- Top Selling Categories -->
+        <div class="mt-6">
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Top Selling Categories</h2>
+                <ul class="dashboard-list pl-5">
+                    <!-- List of top-selling categories -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

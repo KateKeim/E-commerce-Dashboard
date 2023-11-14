@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customers</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="shop-name">
+            <h1>Trinity Shop</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="sales.html">Sales Report</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="customers.html">Customers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Customers</h1>
+        <div class="search">
+            <label for="customer-search">Search:</label>
+            <input type="text" id="customer-search" placeholder="Enter name or email">
+        </div>
+        <table class="customers-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Registration Date</th>
+                    <th>Total Purchase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Customer data will be populated here -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>2023-11-01</td>
+                    <td>$500.00</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>2023-11-02</td>
+                    <td>$700.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
